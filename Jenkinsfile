@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Check K8S') {
             steps {
-                sh 'kubectl get all --namespace flask-app'
+                sh 'k get all --all-namespaces -o wide'
             }
         }
     }
