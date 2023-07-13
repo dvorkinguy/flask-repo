@@ -8,5 +8,10 @@ pipeline {
                 sh 'kubectl get all --namespace projectcontour'
             }
         }
+        stage('Flask deploy'){
+            steps{
+                sh 'kubectl apply -f flask-deployment.yaml'
+            }
+        }
     }
 }

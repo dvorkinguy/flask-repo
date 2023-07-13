@@ -1,0 +1,1 @@
+eksctl create cluster --name flask-app --version 1.27 --region us-west-2 --nodegroup-name flask-nodes --node-type t2.micro --nodes 3
